@@ -1014,7 +1014,7 @@ PROGRAM main
     },
     {
       "id": "rung_main_9f89f8ac-3320-4c9a-9740-e251adad1e7a",
-      "comment": "Rung 1-A:",
+      "comment": "Rung 2: Master System Reset (Stop / Fault)",
       "defaultBounds": [
         300,
         100
