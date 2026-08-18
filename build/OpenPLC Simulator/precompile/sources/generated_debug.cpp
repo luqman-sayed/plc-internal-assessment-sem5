@@ -16,7 +16,7 @@ extern ::strucpp::Configuration_CONFIG0 g_config;
 
 namespace strucpp { namespace debug {
 
-const Entry debug_arr_0[88] STRUCPP_DEBUG_FLASH = {
+const Entry debug_arr_0[90] STRUCPP_DEBUG_FLASH = {
     { (void*)&g_config.INSTANCE0.START_PB, TAG_BOOL, 0 },  // INSTANCE0.START_PB
     { (void*)&g_config.INSTANCE0.STOP_PB, TAG_BOOL, 0 },  // INSTANCE0.STOP_PB
     { (void*)&g_config.INSTANCE0.E_STOP, TAG_BOOL, 0 },  // INSTANCE0.E_STOP
@@ -105,6 +105,8 @@ const Entry debug_arr_0[88] STRUCPP_DEBUG_FLASH = {
     { (void*)&g_config.INSTANCE0.TON3.PT, TAG_TIME, 0 },  // INSTANCE0.TON3.PT
     { (void*)&g_config.INSTANCE0.TON3.Q, TAG_BOOL, 0 },  // INSTANCE0.TON3.Q
     { (void*)&g_config.INSTANCE0.TON3.ET, TAG_TIME, 0 },  // INSTANCE0.TON3.ET
+    { (void*)&g_config.INSTANCE0.R_TRIG1.CLK, TAG_BOOL, 0 },  // INSTANCE0.R_TRIG1.CLK
+    { (void*)&g_config.INSTANCE0.R_TRIG1.Q, TAG_BOOL, 0 },  // INSTANCE0.R_TRIG1.Q
 };
 
 const Entry* const debug_arrays[1] STRUCPP_DEBUG_FLASH = {
@@ -112,7 +114,7 @@ const Entry* const debug_arrays[1] STRUCPP_DEBUG_FLASH = {
 };
 
 const uint16_t debug_array_counts[1] STRUCPP_DEBUG_FLASH = {
-    88,
+    90,
 };
 
 const uint8_t debug_array_count = 1;

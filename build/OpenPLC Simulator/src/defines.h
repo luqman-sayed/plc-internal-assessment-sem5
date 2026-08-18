@@ -1,7 +1,7 @@
 
 
 //Program MD5
-#define PROGRAM_MD5 "4ed08c290342582aad55c16cd434da54"
+#define PROGRAM_MD5 "a51dbb0f9fc927b0e2fceee13666c3ab"
 
 //Comms Configuration
 #define SIMULATOR_MODE

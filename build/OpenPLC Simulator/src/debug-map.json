@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "md5": "4ed08c290342582aad55c16cd434da54",
+  "md5": "a51dbb0f9fc927b0e2fceee13666c3ab",
   "typeTags": {
     "BOOL": 0,
     "SINT": 1,
@@ -27,7 +27,7 @@
   "arrays": [
     {
       "index": 0,
-      "count": 88
+      "count": 90
     }
   ],
   "leaves": [
@@ -646,6 +646,20 @@
       "path": "INSTANCE0.TON3.ET",
       "type": "TIME",
       "size": 8
+    },
+    {
+      "arrayIdx": 0,
+      "elemIdx": 88,
+      "path": "INSTANCE0.R_TRIG1.CLK",
+      "type": "BOOL",
+      "size": 1
+    },
+    {
+      "arrayIdx": 0,
+      "elemIdx": 89,
+      "path": "INSTANCE0.R_TRIG1.Q",
+      "type": "BOOL",
+      "size": 1
     }
   ]
 }

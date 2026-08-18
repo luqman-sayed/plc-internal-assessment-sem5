@@ -14,12 +14,15 @@ void Program_MAIN::run() {
     if ((((NOT(JAM_FAULT)) & (E_STOP)) & (STOP_PB)) & (START_PB)) {
         SYS_RUN = true;
     }
-    if (((JAM_FAULT) | (NOT(STOP_PB))) | (NOT(E_STOP))) {
+    if (NOT(STOP_PB)) {
         SYS_RUN = false;
     }
     RUN_LAMP = SYS_RUN;
     ALARM_HORN = JAM_FAULT;
-    if ((((NOT(C1.Q)) & (NOT(SYS_BUSY))) & (SEL_FICTION)) & (BOOK_INFEED_SENSOR)) {
+    R_TRIG1.CLK = BOOK_INFEED_SENSOR;
+    R_TRIG1();
+    R_TRIG1.ENO = true;
+    if ((((NOT(C1.Q)) & (NOT(SYS_BUSY))) & (SEL_FICTION)) & (R_TRIG1.Q)) {
         CAT_FICTION = true;
     }
     if ((((NOT(C2.Q)) & (NOT(SYS_BUSY))) & (SEL_NONFICTION)) & (BOOK_INFEED_SENSOR)) {
@@ -77,7 +80,7 @@ void Program_MAIN::run() {
         CAT_REFERENCE = false;
         SYS_BUSY = false;
     }
-    T_JAM.IN = SYS_BUSY;
+    T_JAM.IN = (CONVEYOR_MOTOR) & (SYS_BUSY);
     T_JAM.PT = 12000000000LL;
     T_JAM();
     T_JAM.ENO = true;
@@ -86,6 +89,7 @@ void Program_MAIN::run() {
     }
     if (RESET_PB) {
         JAM_FAULT = false;
+        SYS_BUSY = false;
     }
 }
 
