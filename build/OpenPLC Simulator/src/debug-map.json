@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "md5": "a51dbb0f9fc927b0e2fceee13666c3ab",
+  "md5": "3e690f1a2030b85ba056f46ac2abecb3",
   "typeTags": {
     "BOOL": 0,
     "SINT": 1,
@@ -27,7 +27,7 @@
   "arrays": [
     {
       "index": 0,
-      "count": 90
+      "count": 94
     }
   ],
   "leaves": [
@@ -658,6 +658,34 @@
       "arrayIdx": 0,
       "elemIdx": 89,
       "path": "INSTANCE0.R_TRIG1.Q",
+      "type": "BOOL",
+      "size": 1
+    },
+    {
+      "arrayIdx": 0,
+      "elemIdx": 90,
+      "path": "INSTANCE0.R_TRIG2.CLK",
+      "type": "BOOL",
+      "size": 1
+    },
+    {
+      "arrayIdx": 0,
+      "elemIdx": 91,
+      "path": "INSTANCE0.R_TRIG2.Q",
+      "type": "BOOL",
+      "size": 1
+    },
+    {
+      "arrayIdx": 0,
+      "elemIdx": 92,
+      "path": "INSTANCE0.R_TRIG3.CLK",
+      "type": "BOOL",
+      "size": 1
+    },
+    {
+      "arrayIdx": 0,
+      "elemIdx": 93,
+      "path": "INSTANCE0.R_TRIG3.Q",
       "type": "BOOL",
       "size": 1
     }

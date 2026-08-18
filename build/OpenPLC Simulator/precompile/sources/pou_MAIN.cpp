@@ -25,10 +25,16 @@ void Program_MAIN::run() {
     if ((((NOT(C1.Q)) & (NOT(SYS_BUSY))) & (SEL_FICTION)) & (R_TRIG1.Q)) {
         CAT_FICTION = true;
     }
-    if ((((NOT(C2.Q)) & (NOT(SYS_BUSY))) & (SEL_NONFICTION)) & (BOOK_INFEED_SENSOR)) {
+    R_TRIG2.CLK = BOOK_INFEED_SENSOR;
+    R_TRIG2();
+    R_TRIG2.ENO = true;
+    if ((((NOT(C2.Q)) & (NOT(SYS_BUSY))) & (SEL_NONFICTION)) & (R_TRIG2.Q)) {
         CAT_NONFICTION = true;
     }
-    if ((((C3.Q) & (NOT(SYS_BUSY))) & (SEL_REFERENCE)) & (BOOK_INFEED_SENSOR)) {
+    R_TRIG3.CLK = BOOK_INFEED_SENSOR;
+    R_TRIG3();
+    R_TRIG3.ENO = true;
+    if ((((C3.Q) & (NOT(SYS_BUSY))) & (SEL_REFERENCE)) & (R_TRIG3.Q)) {
         CAT_REFERENCE = true;
     }
     if (((CAT_FICTION) | (CAT_NONFICTION)) | (CAT_REFERENCE)) {
@@ -80,8 +86,8 @@ void Program_MAIN::run() {
         CAT_REFERENCE = false;
         SYS_BUSY = false;
     }
-    T_JAM.IN = (CONVEYOR_MOTOR) & (SYS_BUSY);
-    T_JAM.PT = 12000000000LL;
+    T_JAM.IN = SYS_BUSY;
+    T_JAM.PT = 240000000000LL;
     T_JAM();
     T_JAM.ENO = true;
     if (T_JAM.Q) {

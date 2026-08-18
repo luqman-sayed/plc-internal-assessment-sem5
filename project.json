@@ -45,7 +45,15 @@
           "Diverter1_Sol",
           "Diverter2_Sol",
           "Diverter3_Sol",
+          "Run_Lamp",
+          "Full_Lamp1",
+          "Full_Lamp2",
+          "Full_Lamp3",
+          "Alarm_Horn",
           "Sys_Run",
+          "Cat_Fiction",
+          "Cat_NonFiction",
+          "Cat_Reference",
           "Sys_Busy",
           "Jam_Fault"
         ]

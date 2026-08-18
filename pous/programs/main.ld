@@ -5545,7 +5545,7 @@ PROGRAM main
                 }
               }
             ],
-            "variant": "default",
+            "variant": "risingEdge",
             "inputHandles": [
               {
                 "glbPosition": {
@@ -6275,7 +6275,7 @@ PROGRAM main
                 }
               }
             ],
-            "variant": "default",
+            "variant": "risingEdge",
             "inputHandles": [
               {
                 "glbPosition": {
@@ -25789,7 +25789,7 @@ PROGRAM main
         100
       ],
       "reactFlowViewport": [
-        704,
+        590,
         410
       ],
       "nodes": [
@@ -26274,163 +26274,17 @@ PROGRAM main
           "dragging": false
         },
         {
-          "id": "CONTACT_d5e15b65-d995-4ae8-a700-b22bb9fb1062",
-          "type": "contact",
-          "position": {
-            "x": 186,
-            "y": 38
-          },
-          "data": {
-            "handles": [
-              {
-                "glbPosition": {
-                  "x": 186,
-                  "y": 50
-                },
-                "relPosition": {
-                  "x": 0,
-                  "y": 12
-                },
-                "id": "input",
-                "position": "left",
-                "isConnectable": false,
-                "type": "target",
-                "style": {
-                  "left": -3
-                }
-              },
-              {
-                "glbPosition": {
-                  "x": 210,
-                  "y": 50
-                },
-                "relPosition": {
-                  "x": 24,
-                  "y": 12
-                },
-                "id": "output",
-                "position": "right",
-                "isConnectable": false,
-                "type": "source",
-                "style": {
-                  "right": -3
-                }
-              }
-            ],
-            "variant": "default",
-            "inputHandles": [
-              {
-                "glbPosition": {
-                  "x": 186,
-                  "y": 50
-                },
-                "relPosition": {
-                  "x": 0,
-                  "y": 12
-                },
-                "id": "input",
-                "position": "left",
-                "isConnectable": false,
-                "type": "target",
-                "style": {
-                  "left": -3
-                }
-              }
-            ],
-            "outputHandles": [
-              {
-                "glbPosition": {
-                  "x": 210,
-                  "y": 50
-                },
-                "relPosition": {
-                  "x": 24,
-                  "y": 12
-                },
-                "id": "output",
-                "position": "right",
-                "isConnectable": false,
-                "type": "source",
-                "style": {
-                  "right": -3
-                }
-              }
-            ],
-            "inputConnector": {
-              "glbPosition": {
-                "x": 186,
-                "y": 50
-              },
-              "relPosition": {
-                "x": 0,
-                "y": 12
-              },
-              "id": "input",
-              "position": "left",
-              "isConnectable": false,
-              "type": "target",
-              "style": {
-                "left": -3
-              }
-            },
-            "outputConnector": {
-              "glbPosition": {
-                "x": 210,
-                "y": 50
-              },
-              "relPosition": {
-                "x": 24,
-                "y": 12
-              },
-              "id": "output",
-              "position": "right",
-              "isConnectable": false,
-              "type": "source",
-              "style": {
-                "right": -3
-              }
-            },
-            "numericId": "8972333",
-            "variable": {
-              "id": "",
-              "name": "Conveyor_Motor",
-              "type": {
-                "definition": "base-type",
-                "value": "BOOL"
-              },
-              "class": "local",
-              "location": "",
-              "documentation": "",
-              "debug": false
-            },
-            "executionOrder": 0,
-            "draggable": true,
-            "selectable": true,
-            "deletable": true
-          },
-          "width": 24,
-          "height": 24,
-          "measured": {
-            "width": 24,
-            "height": 24
-          },
-          "draggable": true,
-          "selectable": true,
-          "selected": false,
-          "dragging": false
-        },
-        {
           "id": "BLOCK_caaef337-1371-4848-99b9-0f676d47ab8f",
           "type": "block",
           "position": {
-            "x": 375,
+            "x": 261,
             "y": 14
           },
           "data": {
             "handles": [
               {
                 "glbPosition": {
-                  "x": 375,
+                  "x": 261,
                   "y": 50
                 },
                 "relPosition": {
@@ -26448,7 +26302,7 @@ PROGRAM main
               },
               {
                 "glbPosition": {
-                  "x": 375,
+                  "x": 261,
                   "y": 90
                 },
                 "relPosition": {
@@ -26466,7 +26320,7 @@ PROGRAM main
               },
               {
                 "glbPosition": {
-                  "x": 441,
+                  "x": 327,
                   "y": 50
                 },
                 "relPosition": {
@@ -26484,7 +26338,7 @@ PROGRAM main
               },
               {
                 "glbPosition": {
-                  "x": 441,
+                  "x": 327,
                   "y": 90
                 },
                 "relPosition": {
@@ -26504,7 +26358,7 @@ PROGRAM main
             "inputHandles": [
               {
                 "glbPosition": {
-                  "x": 375,
+                  "x": 261,
                   "y": 50
                 },
                 "relPosition": {
@@ -26522,7 +26376,7 @@ PROGRAM main
               },
               {
                 "glbPosition": {
-                  "x": 375,
+                  "x": 261,
                   "y": 90
                 },
                 "relPosition": {
@@ -26542,7 +26396,7 @@ PROGRAM main
             "outputHandles": [
               {
                 "glbPosition": {
-                  "x": 441,
+                  "x": 327,
                   "y": 50
                 },
                 "relPosition": {
@@ -26560,7 +26414,7 @@ PROGRAM main
               },
               {
                 "glbPosition": {
-                  "x": 441,
+                  "x": 327,
                   "y": 90
                 },
                 "relPosition": {
@@ -26579,7 +26433,7 @@ PROGRAM main
             ],
             "inputConnector": {
               "glbPosition": {
-                "x": 375,
+                "x": 261,
                 "y": 50
               },
               "relPosition": {
@@ -26597,7 +26451,7 @@ PROGRAM main
             },
             "outputConnector": {
               "glbPosition": {
-                "x": 441,
+                "x": 327,
                 "y": 50
               },
               "relPosition": {
@@ -26675,7 +26529,7 @@ PROGRAM main
                 "handleId": "PT",
                 "type": "input",
                 "variable": {
-                  "name": "T#12s"
+                  "name": "T#240s"
                 }
               }
             ],
@@ -28412,14 +28266,14 @@ PROGRAM main
           "id": "PARALLEL_CLOSE_7a0f44be-bdec-4027-a268-dc3429cc83b2",
           "type": "parallel",
           "position": {
-            "x": 561,
+            "x": 447,
             "y": 49
           },
           "data": {
             "handles": [
               {
                 "glbPosition": {
-                  "x": 561,
+                  "x": 447,
                   "y": 50
                 },
                 "relPosition": {
@@ -28437,7 +28291,7 @@ PROGRAM main
               },
               {
                 "glbPosition": {
-                  "x": 565,
+                  "x": 451,
                   "y": 50
                 },
                 "relPosition": {
@@ -28454,7 +28308,7 @@ PROGRAM main
               },
               {
                 "glbPosition": {
-                  "x": 565,
+                  "x": 451,
                   "y": 50
                 },
                 "relPosition": {
@@ -28472,7 +28326,7 @@ PROGRAM main
               },
               {
                 "glbPosition": {
-                  "x": 565,
+                  "x": 451,
                   "y": 50
                 },
                 "relPosition": {
@@ -28491,7 +28345,7 @@ PROGRAM main
             "inputHandles": [
               {
                 "glbPosition": {
-                  "x": 561,
+                  "x": 447,
                   "y": 50
                 },
                 "relPosition": {
@@ -28509,7 +28363,7 @@ PROGRAM main
               },
               {
                 "glbPosition": {
-                  "x": 565,
+                  "x": 451,
                   "y": 50
                 },
                 "relPosition": {
@@ -28528,7 +28382,7 @@ PROGRAM main
             "outputHandles": [
               {
                 "glbPosition": {
-                  "x": 565,
+                  "x": 451,
                   "y": 50
                 },
                 "relPosition": {
@@ -28546,7 +28400,7 @@ PROGRAM main
               },
               {
                 "glbPosition": {
-                  "x": 565,
+                  "x": 451,
                   "y": 50
                 },
                 "relPosition": {
@@ -28564,7 +28418,7 @@ PROGRAM main
             ],
             "inputConnector": {
               "glbPosition": {
-                "x": 561,
+                "x": 447,
                 "y": 50
               },
               "relPosition": {
@@ -28582,7 +28436,7 @@ PROGRAM main
             },
             "outputConnector": {
               "glbPosition": {
-                "x": 565,
+                "x": 451,
                 "y": 50
               },
               "relPosition": {
@@ -28601,7 +28455,7 @@ PROGRAM main
             "numericId": "9683840",
             "parallelInputConnector": {
               "glbPosition": {
-                "x": 565,
+                "x": 451,
                 "y": 50
               },
               "relPosition": {
@@ -28618,7 +28472,7 @@ PROGRAM main
             },
             "parallelOutputConnector": {
               "glbPosition": {
-                "x": 565,
+                "x": 451,
                 "y": 50
               },
               "relPosition": {
@@ -28658,7 +28512,7 @@ PROGRAM main
           "id": "right-rail-rung_main_e09e2f37-9042-4723-806c-0186786bc70a",
           "type": "powerRail",
           "position": {
-            "x": 701,
+            "x": 587,
             "y": 30
           },
           "data": {
@@ -28680,7 +28534,7 @@ PROGRAM main
                   "top": 20,
                   "left": -3
                 },
-                "x": 701
+                "x": 587
               }
             ],
             "inputHandles": [
@@ -28744,10 +28598,10 @@ PROGRAM main
           "dragging": false
         },
         {
-          "id": "VARIABLE_83382cf7-b3b5-4f37-a27f-28734ca086f7",
+          "id": "VARIABLE_a070632b-5675-4757-aad9-64727a1941d5",
           "type": "variable",
           "position": {
-            "x": 265,
+            "x": 151,
             "y": 74
           },
           "width": 80,
@@ -28760,7 +28614,7 @@ PROGRAM main
             "handles": [
               {
                 "glbPosition": {
-                  "x": 425,
+                  "x": 311,
                   "y": 90
                 },
                 "relPosition": {
@@ -28777,7 +28631,7 @@ PROGRAM main
             "outputHandles": [
               {
                 "glbPosition": {
-                  "x": 425,
+                  "x": 311,
                   "y": 90
                 },
                 "relPosition": {
@@ -28792,7 +28646,7 @@ PROGRAM main
             ],
             "outputConnector": {
               "glbPosition": {
-                "x": 425,
+                "x": 311,
                 "y": 90
               },
               "relPosition": {
@@ -28804,9 +28658,9 @@ PROGRAM main
               "isConnectable": false,
               "type": "source"
             },
-            "numericId": "7398954",
+            "numericId": "949941",
             "variable": {
-              "name": "T#12s"
+              "name": "T#240s"
             },
             "executionOrder": 0,
             "variant": "input",
@@ -28833,10 +28687,10 @@ PROGRAM main
           "dragging": false
         },
         {
-          "id": "VARIABLE_5137c575-0324-4539-bb20-5e9274a5a937",
+          "id": "VARIABLE_263c6a41-433e-4b0e-b3e6-49aa0a9c4fd5",
           "type": "variable",
           "position": {
-            "x": 471,
+            "x": 357,
             "y": 74
           },
           "width": 80,
@@ -28849,7 +28703,7 @@ PROGRAM main
             "handles": [
               {
                 "glbPosition": {
-                  "x": 471,
+                  "x": 357,
                   "y": 90
                 },
                 "relPosition": {
@@ -28865,7 +28719,7 @@ PROGRAM main
             "inputHandles": [
               {
                 "glbPosition": {
-                  "x": 471,
+                  "x": 357,
                   "y": 90
                 },
                 "relPosition": {
@@ -28881,7 +28735,7 @@ PROGRAM main
             "outputHandles": [],
             "inputConnector": {
               "glbPosition": {
-                "x": 471,
+                "x": 357,
                 "y": 90
               },
               "relPosition": {
@@ -28893,7 +28747,7 @@ PROGRAM main
               "isConnectable": false,
               "type": "target"
             },
-            "numericId": "2810249",
+            "numericId": "9037879",
             "variable": {
               "name": ""
             },
@@ -29036,30 +28890,23 @@ PROGRAM main
           "targetHandle": "input-down"
         },
         {
-          "id": "e_CONTACT_6acf1a57-eeb2-43ec-8f8f-84001d8d202a_CONTACT_d5e15b65-d995-4ae8-a700-b22bb9fb1062__output_input",
+          "id": "e_CONTACT_6acf1a57-eeb2-43ec-8f8f-84001d8d202a_BLOCK_caaef337-1371-4848-99b9-0f676d47ab8f__output_IN",
           "source": "CONTACT_6acf1a57-eeb2-43ec-8f8f-84001d8d202a",
-          "target": "CONTACT_d5e15b65-d995-4ae8-a700-b22bb9fb1062",
-          "sourceHandle": "output",
-          "targetHandle": "input"
-        },
-        {
-          "id": "e_CONTACT_d5e15b65-d995-4ae8-a700-b22bb9fb1062_BLOCK_caaef337-1371-4848-99b9-0f676d47ab8f__output_IN",
-          "source": "CONTACT_d5e15b65-d995-4ae8-a700-b22bb9fb1062",
           "target": "BLOCK_caaef337-1371-4848-99b9-0f676d47ab8f",
           "sourceHandle": "output",
           "targetHandle": "IN"
         },
         {
-          "id": "e_VARIABLE_83382cf7-b3b5-4f37-a27f-28734ca086f7_BLOCK_caaef337-1371-4848-99b9-0f676d47ab8f__output_PT",
-          "source": "VARIABLE_83382cf7-b3b5-4f37-a27f-28734ca086f7",
+          "id": "e_VARIABLE_a070632b-5675-4757-aad9-64727a1941d5_BLOCK_caaef337-1371-4848-99b9-0f676d47ab8f__output_PT",
+          "source": "VARIABLE_a070632b-5675-4757-aad9-64727a1941d5",
           "target": "BLOCK_caaef337-1371-4848-99b9-0f676d47ab8f",
           "sourceHandle": "output",
           "targetHandle": "PT"
         },
         {
-          "id": "e_BLOCK_caaef337-1371-4848-99b9-0f676d47ab8f_VARIABLE_5137c575-0324-4539-bb20-5e9274a5a937__ET_input",
+          "id": "e_BLOCK_caaef337-1371-4848-99b9-0f676d47ab8f_VARIABLE_263c6a41-433e-4b0e-b3e6-49aa0a9c4fd5__ET_input",
           "source": "BLOCK_caaef337-1371-4848-99b9-0f676d47ab8f",
-          "target": "VARIABLE_5137c575-0324-4539-bb20-5e9274a5a937",
+          "target": "VARIABLE_263c6a41-433e-4b0e-b3e6-49aa0a9c4fd5",
           "sourceHandle": "ET",
           "targetHandle": "input"
         }

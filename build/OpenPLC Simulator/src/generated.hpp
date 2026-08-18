@@ -175,6 +175,8 @@ public:
     CTU CTU2;
     TON TON3;
     R_TRIG R_TRIG1;
+    R_TRIG R_TRIG2;
+    R_TRIG R_TRIG3;
 
     // Implicit IEC 61131-3 ENO pin (mirrors EN)
     IEC_BOOL ENO = true;
@@ -219,10 +221,5 @@ public:
 
 extern LocatedVar locatedVars[1];
 constexpr uint32_t locatedVarsCount = 0;
-
-#ifdef STRUCPP_THREADED
-extern void *locatedGlobals[1];
-constexpr uint32_t locatedGlobalsCount = 0;
-#endif
 
 }  // namespace strucpp

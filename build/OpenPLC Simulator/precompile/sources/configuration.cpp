@@ -68,19 +68,6 @@ LocatedVar locatedVars[1] = {
     { LocatedArea::Input, LocatedSize::Bit, 0, 0, {0, 0, 0}, nullptr }  // placeholder; locatedVarsCount is 0
 };
 
-#ifdef STRUCPP_THREADED
-// Canonical storage pointers of the located CONFIGURATION VAR_GLOBALs.
-// Populated in the configuration constructor (like locatedVars[] above).
-void *locatedGlobals[1] = {
-    nullptr  // placeholder; locatedGlobalsCount is 0
-};
-
-// C linkage: a host runtime is built once and loads many .so files, so it
-// cannot reach namespaced C++ symbols by mangled name portably.
-extern "C" void *const *strucpp_get_located_globals(void) { return locatedGlobals; }
-extern "C" uint32_t strucpp_get_located_global_count(void) { return locatedGlobalsCount; }
-#endif  // STRUCPP_THREADED
-
 Configuration_CONFIG0::Configuration_CONFIG0()
     : INSTANCE0()
 {
