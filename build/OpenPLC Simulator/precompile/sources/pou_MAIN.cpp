@@ -14,7 +14,7 @@ void Program_MAIN::run() {
     if ((((NOT(JAM_FAULT)) & (E_STOP)) & (STOP_PB)) & (START_PB)) {
         SYS_RUN = true;
     }
-    if (NOT(STOP_PB)) {
+    if (((JAM_FAULT) | (NOT(STOP_PB))) | (NOT(E_STOP))) {
         SYS_RUN = false;
     }
     RUN_LAMP = SYS_RUN;
@@ -87,7 +87,7 @@ void Program_MAIN::run() {
         SYS_BUSY = false;
     }
     T_JAM.IN = SYS_BUSY;
-    T_JAM.PT = 240000000000LL;
+    T_JAM.PT = 20000000000LL;
     T_JAM();
     T_JAM.ENO = true;
     if (T_JAM.Q) {
