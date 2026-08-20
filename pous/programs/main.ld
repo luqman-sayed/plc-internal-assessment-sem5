@@ -6713,7 +6713,7 @@ PROGRAM main
                 }
               }
             ],
-            "variant": "default",
+            "variant": "negated",
             "inputHandles": [
               {
                 "glbPosition": {
