@@ -33,13 +33,9 @@ PROGRAM main
     C1 : CTU; (* Counter — Fiction Shelf (PV := 50) *)
     C2 : CTU; (* Counter — Non-Fiction Shelf (PV := 50) *)
     C3 : CTU; (* Counter — Reference Shelf (PV := 50) *)
-    TON0 : TON; (* Diverter 1 Actuation Pulse Timer (1.5s). Retains the Fiction diverter arm in the extended position long enough to push the book down the chute. *)
     CTU0 : CTU; (* Fiction Shelf Inventory Counter. Tracks total books sorted into the Fiction chute (Preset = 50) and triggers the Shelf 1 Full lamp. *)
-    TON1 : TON; (* Diverter 2 Actuation Pulse Timer (1.5s). Retains the Non-Fiction diverter arm in the extended position long enough to push the book down the chute. *)
     CTU1 : CTU; (* Non-Fiction Shelf Inventory Counter. Tracks total books sorted into the Non-Fiction chute (Preset = 50) and triggers the Shelf 2 Full lamp. *)
-    TON2 : TON; (* Diverter 3 Actuation Pulse Timer (1.5s). Retains the Reference diverter arm in the extended position long enough to push the book down the chute. *)
     CTU2 : CTU; (* Reference Shelf Inventory Counter. Tracks total books sorted into the Reference chute (Preset = 50) and triggers the Shelf 3 Full lamp. *)
-    TON3 : TON; (* Conveyor Jam Protection Timer (12.0s). Monitors Sys_Busy and trips a system Jam Fault if a book fails to reach its destination chute within 12 seconds. *)
   END_VAR
 
 {
@@ -21553,15 +21549,15 @@ PROGRAM main
               "documentation": "The on-delay timer can be used to delay setting an output true, for fixed period after an input becomes true."
             },
             "variable": {
-              "id": "3db3318c-d00b-4a62-9b45-0c9e11297f66",
-              "name": "TON2",
+              "name": "T3",
+              "class": "local",
               "type": {
                 "definition": "derived",
                 "value": "TON"
               },
-              "class": "local",
               "location": "",
-              "documentation": "",
+              "initialValue": null,
+              "documentation": "Pulse Timer — Diverter 3 (PT := T#1.5s)",
               "debug": false
             },
             "executionOrder": 0,

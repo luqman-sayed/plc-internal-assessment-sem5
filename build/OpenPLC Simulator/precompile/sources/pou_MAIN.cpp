@@ -34,7 +34,7 @@ void Program_MAIN::run() {
     R_TRIG3.CLK = BOOK_INFEED_SENSOR;
     R_TRIG3();
     R_TRIG3.ENO = true;
-    if ((((C3.Q) & (NOT(SYS_BUSY))) & (SEL_REFERENCE)) & (R_TRIG3.Q)) {
+    if ((((NOT(C3.Q)) & (NOT(SYS_BUSY))) & (SEL_REFERENCE)) & (R_TRIG3.Q)) {
         CAT_REFERENCE = true;
     }
     if (((CAT_FICTION) | (CAT_NONFICTION)) | (CAT_REFERENCE)) {
@@ -71,10 +71,10 @@ void Program_MAIN::run() {
         CAT_NONFICTION = false;
         SYS_BUSY = false;
     }
-    TON2.IN = (CAT_REFERENCE) & (POS3_SENSOR);
-    TON2.PT = 1500000000LL;
-    TON2();
-    TON2.ENO = true;
+    T3.IN = (CAT_REFERENCE) & (POS3_SENSOR);
+    T3.PT = 1500000000LL;
+    T3();
+    T3.ENO = true;
     DIVERTER3_SOL = ((NOT(T3.Q)) & (CAT_REFERENCE)) & (POS3_SENSOR);
     CTU2.CU = T3.Q;
     CTU2.R = RESET_PB;
@@ -87,7 +87,7 @@ void Program_MAIN::run() {
         SYS_BUSY = false;
     }
     T_JAM.IN = SYS_BUSY;
-    T_JAM.PT = 20000000000LL;
+    T_JAM.PT = 120000000000LL;
     T_JAM();
     T_JAM.ENO = true;
     if (T_JAM.Q) {
